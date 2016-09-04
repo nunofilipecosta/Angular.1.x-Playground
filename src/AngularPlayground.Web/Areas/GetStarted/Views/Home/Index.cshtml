@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Get Started - Index";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div ng-app="githubViewer">
+
+
+    <div ng-controller="MainController">
+
+        <h2>{{message}}</h2>
+        <div>Name : {{user.name}}</div>
+        <div>Location : {{user.location}}</div>
+        <div>
+            <img ng-src="{{user.avatar_url}}" alt="" height="100" width="100"/>
+        </div>
+        
+        <form name="searchUsers" data-ng-submit="search(username)">
+            <input type="search" placeholder="Username to find" data-ng-model="username" required/>
+            <input type="submit" value="Search"/>
+        </form>
+    </div>
+
+</div>
+@section FooterScripts
+{
+    @*<script src="~/Scripts/App/patterns.js"></script>*@
+    <script src="~/Scripts/App/GetStartet/index.js"></script>
+}
