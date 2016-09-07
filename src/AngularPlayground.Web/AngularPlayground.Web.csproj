@@ -115,9 +115,13 @@
     <Content Include="Areas\GetStarted\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\GetStarted\Views\Home\Index.cshtml" />
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\App\GetStartet\index.js" />
+    <Content Include="Scripts\App\GetStartet\app.js" />
+    <Content Include="Scripts\App\GetStartet\github.js" />
+    <Content Include="Scripts\App\GetStartet\mainController.js" />
     <Content Include="Scripts\App\patterns.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -128,6 +132,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Areas\GetStarted\Views\Home\Routing.cshtml" />
+    <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="Areas\Fundamentals\Views\web.config" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -141,6 +148,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Fundamentals\FundamentalsAreaRegistration.cs" />
     <Compile Include="Areas\GetStarted\Controllers\HomeController.cs" />
     <Compile Include="Areas\GetStarted\GetStartedAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -166,6 +174,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Fundamentals\Controllers\" />
+    <Folder Include="Areas\Fundamentals\Models\" />
+    <Folder Include="Areas\Fundamentals\Views\Shared\" />
     <Folder Include="Areas\GetStarted\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
