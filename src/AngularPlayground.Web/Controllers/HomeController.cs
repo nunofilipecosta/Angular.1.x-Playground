@@ -11,6 +11,7 @@ namespace AngularPlayground.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            // TODO : implement logic
             return null;
         }
     }
