@@ -25,17 +25,15 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("GetStarted", "Index", "Home", new { area = "GetStarted" }, null)</li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                GetStarted
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "GetStarted" }, null)</li>
-                                <li>@Html.ActionLink("Routing", "Routing", "Home", new { area = "GetStarted" }, null)</li>
-                            </ul>
-                        </div>
+
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Fundamentals <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "Fundamentals" }, null)</li>
+                            <li>@Html.ActionLink("Routing", "Routing", "Home", new { area = "Fundamentals" }, null)</li>
+                        </ul>
                     </li>
                 </ul>
             </div>

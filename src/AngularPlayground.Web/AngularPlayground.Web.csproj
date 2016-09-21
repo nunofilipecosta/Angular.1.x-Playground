@@ -135,6 +135,9 @@
     <Content Include="Areas\GetStarted\Views\Home\Routing.cshtml" />
     <Content Include="Scripts\angular-route.min.js.map" />
     <Content Include="Areas\Fundamentals\Views\web.config" />
+    <Content Include="Areas\Fundamentals\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Fundamentals\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Fundamentals\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -148,6 +151,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Fundamentals\Controllers\HomeController.cs" />
     <Compile Include="Areas\Fundamentals\FundamentalsAreaRegistration.cs" />
     <Compile Include="Areas\GetStarted\Controllers\HomeController.cs" />
     <Compile Include="Areas\GetStarted\GetStartedAreaRegistration.cs" />
@@ -174,9 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Fundamentals\Controllers\" />
     <Folder Include="Areas\Fundamentals\Models\" />
-    <Folder Include="Areas\Fundamentals\Views\Shared\" />
     <Folder Include="Areas\GetStarted\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
