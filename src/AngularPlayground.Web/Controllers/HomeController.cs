@@ -11,7 +11,7 @@ namespace AngularPlayground.Web.Controllers
         // GET: Home
         public ViewResult Index()
         {
-            return View();
+            return null;
         }
     }
 }
