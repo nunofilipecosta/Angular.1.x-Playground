@@ -9,7 +9,7 @@ namespace AngularPlayground.Web.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ViewResult Index()
+        public ActionResult Index()
         {
             return null;
         }
